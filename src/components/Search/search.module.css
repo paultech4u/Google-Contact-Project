@@ -1,0 +1,51 @@
+input{
+    padding: 17px 20px;
+    width: 640px;
+    border-radius: 7px;
+}
+
+.leftInnerAddon {
+    position: relative;
+    left: 20px;
+
+}
+.leftInnerAddon input {
+    background: rgba(246, 243, 243, 0.986);
+    border: white;
+    font-size: medium;
+    outline: none;
+    padding-left: 68px;
+}
+.leftInnerAddon img {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    pointer-events: visible;
+    top: 0.46rem;
+    left: 1rem;
+}
+
+img{
+    margin: 3px;
+    padding: 10px;
+}
+
+.leftInnerAddon input:focus {
+    background-color: white;
+    box-shadow:  1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+    border-radius:7px 7px 0 0;
+}
+
+.leftInnerAddon img:hover{
+    background: rgba(226, 221, 221, 0.979);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
