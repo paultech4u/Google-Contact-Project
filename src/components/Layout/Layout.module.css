@@ -1,31 +1,6 @@
-.main{
-    margin-top: 80px;
-    display: block;
-}
-
-.bld{
-    height: 40px;
-    border-bottom: 1px solid rgb(209, 202, 202);
-    display: table;
-    table-layout: fixed;
-    overflow: hidden;
-    background: #fff;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.name{
-    padding-left: 10px;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: table-cell;
-    line-height: 1.25%;
-}
-
-.email{
-    padding-left: 10px;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: table-cell;
+.Drawer{
+    position: relative;
+    top: 80px;
+    max-width: 860;
+    width: 20%;
 }
