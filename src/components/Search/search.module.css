@@ -26,7 +26,6 @@ input{
 }
 
 img{
-    margin: 3px;
     padding: 10px;
 }
 
@@ -37,8 +36,8 @@ img{
 }
 
 .leftInnerAddon img:hover{
-    background: rgba(226, 221, 221, 0.979);
-    border-radius: 10px;
+    background-color: rgba(226, 221, 221, 0.979);
+    border-radius: 24px;
 }
 
 

@@ -1,0 +1,64 @@
+.Header{
+    position: fixed;
+    padding: 8px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+}
+
+.Header > div{
+    flex: 0.03 0 auto;
+}
+
+.Header > .Search{
+    padding-left: 65px;
+}
+
+.Header > .AvatarIcon{
+    padding-left: 40px;
+    line-height: normal;
+    left: 20px;
+}
+
+.label{
+    padding-left: 4px;
+    color: #5f6368;
+    opacity: 1;
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    vertical-align: middle;
+    font-family: 'Product Sans',Arial,sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+ }
+
+.Menu{
+    padding-left: 10px;
+    cursor: pointer;
+    
+}
+
+.HelpIcon{
+  padding-left: 100px;
+}
+
+
+.AppsIcon{
+    padding-left: 43px;
+}
+
+.ImgAvatar{
+    padding-left: 20px;
+}
+
+.Set{
+    padding-left: 33px;
+}
+
+
+
+
