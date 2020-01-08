@@ -1,0 +1,75 @@
+.list {
+  background: #fff;
+  box-sizing: border-box;
+  display: table;
+  height: 56px;
+  table-layout: fixed;
+  transition: 0.1s all;
+  width: 100%;
+}
+
+
+.Avatar{
+    box-sizing: border-box;
+    display: table-cell;
+    overflow: hidden;
+    padding: 4px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding-left: 12px;
+    width: 68px;
+}
+
+
+.name{
+    width: 200px;
+    box-sizing: border-box;
+    display: table-cell;
+    overflow: hidden;
+    padding: 4px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.number{
+    width: 190px;
+    height: 48px;
+    box-sizing: border-box;
+    display: table-cell;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+.email{
+    width: 190px;
+    height: 48px;
+    box-sizing: border-box;
+    display: table-cell;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.title{
+    box-sizing: border-box;
+    display: table-cell;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+.contactlist{
+    transform: translateY(0px);
+    height: 56px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}

@@ -1,13 +1,11 @@
 input{
-    padding: 17px 20px;
+    padding: 15px 20px;
     width: 640px;
     border-radius: 7px;
 }
 
 .leftInnerAddon {
     position: relative;
-    left: 20px;
-
 }
 .leftInnerAddon input {
     background: rgba(246, 243, 243, 0.986);
@@ -16,28 +14,35 @@ input{
     outline: none;
     padding-left: 68px;
 }
-.leftInnerAddon img {
+.leftInnerAddon .icon{
     position: absolute;
-    height: 18px;
-    width: 18px;
+    display: flex;
+    height: 40px;
+    width: 40px;
     pointer-events: visible;
-    top: 0.46rem;
+    cursor: pointer;
+    top: 0.3rem;
     left: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
-img{
-    padding: 10px;
-}
 
 .leftInnerAddon input:focus {
     background-color: white;
-    box-shadow:  1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+    box-shadow:  1px 1px 0 rgba(90, 90, 90, 0.302), 0 1px 3px 1px rgba(220, 224, 233, 0.149), 0 1px 3px 1px rgba(137, 140, 149, 0.149);
     border-radius:7px 7px 0 0;
 }
 
-.leftInnerAddon img:hover{
+.svg{
+    color: #5f6368;
+     width: 24px;
+     height: 24px;
+}
+
+.leftInnerAddon .icon:hover{
     background-color: rgba(226, 221, 221, 0.979);
-    border-radius: 24px;
+    border-radius: 27px;
 }
 
 

@@ -1,0 +1,79 @@
+
+.items{
+    background-color: #fff;
+    display: table;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    width: 100%;
+    table-layout: fixed;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 50px;
+    cursor: default;
+    margin-bottom: 8px;
+}
+
+.name {
+    padding-left: 10px;
+    letter-spacing: .01785714em;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    box-sizing: border-box;
+    color: #5f6368;
+    display: table-cell;
+    overflow: hidden;
+    padding: 4px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.email {
+    letter-spacing: .01785714em;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    box-sizing: border-box;
+    color: #5f6368;
+    display: table-cell;
+    overflow: hidden;
+    /* padding: 4px; */
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+.number{
+    letter-spacing: .01785714em;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    box-sizing: border-box;
+    color: #5f6368;
+    display: table-cell;
+    overflow: hidden;
+    /* padding: 4px; */
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.title{
+    letter-spacing: .01785714em;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    box-sizing: border-box;
+    color: #5f6368;
+    display: table-cell;
+    overflow: hidden;
+    /* padding: 4px; */
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}

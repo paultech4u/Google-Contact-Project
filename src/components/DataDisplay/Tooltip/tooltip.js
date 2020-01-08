@@ -1,15 +1,27 @@
 import React from "react";
 
-import classes from './tooltips.module.css'
+import Tooltip from '@material-ui/core/Tooltip';
+// import { makeStyles } from '@material-ui/core/styles';
 
-const Tooltip = props => {
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     color: 'black'
+//   }
+// }))
+
+const Tooltips = (props) => {
+  // const classes = useStyles();
+  const {...other} = props;
   return(
-    <div className={classes.tooltip}>
-      {props.children}
-      <span className={classes.tooltiptext}>{props.value}</span>
-    </div>
+      <Tooltip 
+      //  classes={{
+      //    root: classes.root
+      //  }}
+       {...other}>
+        {props.children}
+      </Tooltip>
   );
 };
 
 
-export default Tooltip;
+export default Tooltips;

@@ -1,64 +1,183 @@
-.Header{
-    position: fixed;
-    padding: 8px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    z-index: 20;
+.Header {
+  position: relative;
+  padding: 8px;
+  /* width: 100%; */
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 20;
 }
 
-.Header > div{
-    flex: 0.03 0 auto;
+.label {
+  display: inline-block;
+  font-size: 22px;
+  font-family: "Product Sans", Arial, sans-serif;
+  line-height: 24px;
+  padding-left: 4px;
+  position: relative;
+  top: -1.5px;
+  vertical-align: middle;
+  color: #5f6365;
+  opacity: 1;
 }
 
-.Header > .Search{
-    padding-left: 65px;
+.mainmenu {
+  border-radius: 50%;
+  color: #5f6365;
+  display: inline-block;
+  margin: 0 4px;
+  padding: 12px;
+  vertical-align: middle;
+  overflow: hidden;
+  cursor: pointer;
+  flex: 0 0 auto;
+  height: 24px;
+  width: 24px;
+}
+a {
+  text-decoration: none;
+}
+.avatar {
+  outline: none;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.Header > .AvatarIcon{
-    padding-left: 40px;
-    line-height: normal;
-    left: 20px;
+.circleIcon {
+  vertical-align: middle;
+  /* padding-top: 4px; */
+  padding-right: 4px;
+  border: none;
 }
 
-.label{
-    padding-left: 4px;
-    color: #5f6368;
-    opacity: 1;
-    display: inline-block;
-    position: relative;
-    top: -15px;
-    vertical-align: middle;
-    font-family: 'Product Sans',Arial,sans-serif;
-    font-size: 22px;
-    line-height: 24px;
- }
-
-.Menu{
-    padding-left: 10px;
-    cursor: pointer;
-    
+.avatarIcon {
+  line-height: normal;
+  position: relative;
+  padding-left: 0;
 }
 
-.HelpIcon{
-  padding-left: 100px;
+.icon {
+  align-items: center;
+  display: flex;
+  position: relative;
+  top: 3px;
 }
 
-
-.AppsIcon{
-    padding-left: 43px;
+.menu {
+  padding-right: 30px;
+  box-sizing: border-box;
+  flex: 1 0 auto;
+  height: 46px;
+  vertical-align: middle;
+  display: flex;
+  /* justify-content: center; */
 }
 
-.ImgAvatar{
-    padding-left: 20px;
+.Search {
+  padding-right: 30px;
+  flex: 1 1 auto;
+  max-width: 100%;
+  padding-left: 10px;
+  height: 48px;
 }
 
-.Set{
-    padding-left: 33px;
+.icon2 {
+  display: flex;
+  vertical-align: middle;
+  height: 48px;
+  flex: 1 1 100%;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+.helpicon {
+  height: 48px;
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
+  text-align: initial;
+}
 
+.helpicon2 {
+  transition: background 0.3s;
+  border: 0;
+  border-radius: 50%;
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  fill: #444;
+  flex-shrink: 0;
+  height: 48px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 48px;
+  z-index: 0;
+}
+.setting {
+  display: table-cell;
+  height: 48px;
+  vertical-align: middle;
+}
 
+.setting2 {
+  transition: background 0.3s;
+  border: 0;
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  fill: #444;
+  flex-shrink: 0;
+  height: 48px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 48px;
+  z-index: 0;
+}
 
+.icon3 {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  padding: 0 4px;
+}
+
+/* .appicon{
+  padding: 4px 2px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 0;
+} */
+
+.appicon2 {
+  display: inline-block;
+  padding: 8px 8px 8px 8px;
+  outline: none;
+  vertical-align: middle;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+}
+
+.avataricon {
+  display: flex;
+  width: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover:hover{
+  background-color:rgba(243, 236, 236, 0.979);
+  border-radius: 24px;
+}
+
+.focus::before:hover{
+  background-color: #404142;
+  border-radius: 24px;
+  box-shadow: 1px 2px rgba(90, 85, 85, 0.979);
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import styles from './input.module.css'
-import Aux from '../../hoc/hoc'
+
 const Input = (props) => {
     let inputElement = null;
     switch (props.type) {
@@ -15,9 +15,9 @@ const Input = (props) => {
             break;
     }
     return(
-        <Aux>
+        <div>
             {inputElement}
-        </Aux>
+        </div>
              
     )
 }

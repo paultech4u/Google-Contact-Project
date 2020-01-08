@@ -1,40 +1,43 @@
-import React, { Component } from "react";
+import React from "react";
+import { BrowserRouter as Router , Route as RouteLink } from "react-router-dom";
+import Aux from "../../hoc/Aux";
+import { makeStyles } from '@material-ui/core/styles'
 
-import classes from "./Layout.module.css";
 import Nav from "../Navigation/NavigationItems/NavigationItems";
-import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
+import ContactDisplay from "../UI/Contact/ContactDisplay";
+import SideBar from "../Navigation/Sidebar/Sidebar";
+import Families from "../pages/Families"
 
-class Layout extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      visible: true
-    };
-  }
-  onCloseSideDrawer = () => {
-    this.setState({ visible: true });
-  };
-  onOpenSideDrawer = () => {
-    this.setState({ visible: !this.state.visible });
-  };
-  render() {
-    return (
-        <nav>
-          <div>
-            <Nav
-              MenuClick={
-                this.state.visible === true
-                  ? this.onOpenSideDrawer
-                  : this.onCloseSideDrawer
-              }
-            />
-          </div>
-          <div className={classes.Drawer}>
-            <SideDrawer show={this.state.visible} />
-          </div>
-        </nav>
-    );
-  }
+const useStyles = makeStyles(() => ({
+  nav: {
+    height: '64px',
+  },
+  main: {
+    marginLeft: '280px',
+    flex: 1,
+    overflowY: 'auto',
+    zIndex: 1,
 }
+}))
 
-export default Layout;
+export default function Layout(props){
+  const styles = useStyles()
+  return (
+    <Aux>
+      <Router>
+          <header className={styles.nav}>
+            <Nav />
+            <SideBar />
+          </header>
+          <main className={styles.main}>
+            <div>
+              <RouteLink exact path='/' component={ContactDisplay}/>
+              <RouteLink  path='/label' component={Families}/>
+            </div>
+          </main>
+      </Router>
+    </Aux>
+  );
+};
+
+// export default Layout;
