@@ -1,5 +1,5 @@
 
-.items{
+.row{
     background-color: #fff;
     display: table;
     border-bottom: 1px solid rgba(0,0,0,0.12);
@@ -12,7 +12,7 @@
     margin-bottom: 8px;
 }
 
-.name {
+.nameCol{
     padding-left: 10px;
     letter-spacing: .01785714em;
     font-family: Roboto,Arial,sans-serif;
@@ -29,7 +29,7 @@
     white-space: nowrap;
 }
 
-.email {
+.emailCol{
     letter-spacing: .01785714em;
     font-family: Roboto,Arial,sans-serif;
     font-size: .875rem;
@@ -46,7 +46,7 @@
 }
 
 
-.number{
+.numberCol{
     letter-spacing: .01785714em;
     font-family: Roboto,Arial,sans-serif;
     font-size: .875rem;
@@ -56,13 +56,12 @@
     color: #5f6368;
     display: table-cell;
     overflow: hidden;
-    /* padding: 4px; */
     text-overflow: ellipsis;
     vertical-align: middle;
     white-space: nowrap;
 }
 
-.title{
+.titleCol{
     letter-spacing: .01785714em;
     font-family: Roboto,Arial,sans-serif;
     font-size: .875rem;
@@ -72,8 +71,54 @@
     color: #5f6368;
     display: table-cell;
     overflow: hidden;
-    /* padding: 4px; */
     text-overflow: ellipsis;
     vertical-align: middle;
     white-space: nowrap;
+}
+
+.morevert1 {
+    overflow: hidden;
+    padding: 4px 2px 4px;
+    text-align: right;
+    width: 120px;
+}
+
+.morevert2 {
+    letter-spacing: .01785714em;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    box-sizing: border-box;
+    color: #5f6368;
+    display: table-cell;
+    overflow: hidden;
+    padding: 4px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.MoreIcon{
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    text-align: center;
+    border: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    outline: none;
+    transition: background 3s;
+    z-index: 0;
+}
+
+
+
+
+.card2{
+    transition: left .2s cubic-bezier(0.0,0.0,0.2,1),max-width .2s cubic-bezier(0.0,0.0,0.2,1),max-height .2s cubic-bezier(0.0,0.0,0.2,1),opacity .05s linear,top .2s cubic-bezier(0.0,0.0,0.2,1);
+    transform: translateZ(0);
 }

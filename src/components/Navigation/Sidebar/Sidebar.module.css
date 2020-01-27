@@ -13,6 +13,8 @@
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
+    width: 280px;
+    height: 900px;
 }
 
 .personOutline {
@@ -25,7 +27,7 @@
   vertical-align: middle;
   line-height: 1.3rem;
   opacity: 8;
-  /* padding-right: 10px; */
+  color: #706c6c;
 }
 
 .label {
@@ -46,11 +48,12 @@
 
 .label a {
   font-weight: 500;
+  font-size: 1em;
   outline: 0;
   padding: 10px 26px;
   display: flex;
-  color: black;
-  line-height: 1.25rem;
+  color: #181717;
+  line-height: 1.25em;
   overflow: hidden;
   vertical-align: middle;
 }

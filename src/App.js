@@ -1,16 +1,14 @@
-import React, { Component } from "react";
-// import axios from "axios";
-// import { makeStyles } from '@material-ui/core/styles'
-
+import React from 'react'
 import classes from "./App.module.css";
-import Layout from './components/Layout/Layout'
+import Layout from '../src/components/Layout/Layout'
 
-class App extends Component {
-  render() {
+function App(){ 
     return (
-      <Layout/>
+      <div className={classes.App}>
+          <Layout/>
+      </div>
+     
     );
   }
-}
 
 export default App;

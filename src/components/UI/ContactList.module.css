@@ -1,4 +1,4 @@
-.list {
+.row{
   background: #fff;
   box-sizing: border-box;
   display: table;
@@ -9,7 +9,7 @@
 }
 
 
-.Avatar{
+.avatarCell{
     box-sizing: border-box;
     display: table-cell;
     overflow: hidden;
@@ -17,13 +17,13 @@
     text-overflow: ellipsis;
     vertical-align: middle;
     white-space: nowrap;
-    padding-left: 12px;
-    width: 68px;
+    padding-left: 5px;
+    width: 60px;
 }
 
 
-.name{
-    width: 200px;
+.nameCell{
+    width: 212px;
     box-sizing: border-box;
     display: table-cell;
     overflow: hidden;
@@ -33,21 +33,23 @@
     white-space: nowrap;
 }
 
-.number{
-    width: 190px;
+.numberCell{
+    width: 198px;
     height: 48px;
     box-sizing: border-box;
     display: table-cell;
     overflow: hidden;
+    padding-left: 2px;
     text-overflow: ellipsis;
     vertical-align: middle;
     white-space: nowrap;
 }
 
 
-.email{
-    width: 190px;
+.emailCell{
+    width: 198px;
     height: 48px;
+    padding-right: 20px;
     box-sizing: border-box;
     display: table-cell;
     overflow: hidden;
@@ -56,7 +58,7 @@
     white-space: nowrap;
 }
 
-.title{
+.titleCell{
     box-sizing: border-box;
     display: table-cell;
     overflow: hidden;
@@ -65,11 +67,3 @@
     white-space: nowrap;
 }
 
-
-.contactlist{
-    transform: translateY(0px);
-    height: 56px;
-    left: 0;
-    position: absolute;
-    top: 0;
-}
